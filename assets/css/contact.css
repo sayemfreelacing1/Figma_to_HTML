@@ -1,0 +1,225 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Global CSS */
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #f9faff;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title-border{
+    background: #FDC435;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 auto 80px;;
+}
+.no-padding{
+    padding: 0;
+}
+.mb-75{
+    margin-bottom: 75px;
+}
+ul{
+    padding: none;
+}
+
+/* Header CSS */
+
+.navbar .navbar-brand{
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    
+}
+.navbar .nav-link{
+    position: relative;
+    color: #25282B;
+    font-size: 18px;
+    margin: 0 18px;
+    overflow: hidden;
+}
+/*.navbar .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 73%;
+    height: 2px;
+    left: 13%;
+    bottom: 0;
+    background: #25282B;
+}*/
+.navbar .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 73%;
+    height: 2px;
+    left: -100%;
+    bottom: 0;
+    background: #25282B;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover::after{
+    left: 13%;
+}
+
+.social-media ul li{
+    list-style: none;
+    display: inline;
+
+} 
+.social-media ul li a .fa-brands,
+.social-media ul li a .fa-solid{
+    text-align: center;
+    background: #fff;
+    width: 48px;
+    border-radius: 5px;
+    color: #25282B;
+    line-height: 48px;
+    font-size: 38px;
+}
+.social-media ul{
+    text-align: center;
+    padding: 2px;
+}
+footer p{
+    color: #828282;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*Contact Page CSS*/
+
+.contact-section{
+    position: relative;
+
+}
+.contact-section .container{
+    margin-top: 25px;
+}
+.contact-section .content-section{
+    position: absolute;
+    width: 52%;
+    top: 55%;
+    transform: translateY(-50%);        
+}
+.contact-section .content-section h2{
+    color: #333333;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 80px;
+}
+.contact-section .content-section p{
+    color: #828282;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    width: 84%;
+}
+.contact-section .content-section .btn-resume{
+    font-family: 'Roboto', sans-serif;
+    background: #FDC435;
+    color: #25282B;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 24px;
+    width: 114px;
+    height: 43px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+   
+}
+.contact-bg{
+    width: 100%;
+    height: auto;
+}
+
+/*Form Page CSS*/
+
+.form-section h2{
+    margin-top: 130px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #25282B;
+}
+.form-section .title-border{
+    background: #FDC435;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 auto 80px;
+}
+.btn-form{
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    background: #FDC435;
+    color: #25282B;
+    font-weight: 800;
+    width: 90px;
+    height: 43px;
+    border-radius: 8px;
+    padding: 8px 0;
+    margin-top: 18px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+.form-section .form-control{
+    outline: none;
+    box-shadow: none;
+}
+label{
+    margin-bottom: 8px;
+    color: #25282B;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/*Footer CSS*/
+footer{
+    background-image: url(../image/footer-bg.png);
+    background-position: bottom;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    padding: 30px 0 125px;
+     
+}
+
+.social-media ul li{
+    list-style: none;
+    display: inline;
+
+} 
+.social-media ul li a .fa-brands,
+.social-media ul li a .fa-solid{
+    text-align: center;
+    background: #fff;
+    width: 48px;
+    border-radius: 5px;
+    color: #25282B;
+    line-height: 48px;
+    font-size: 38px;
+}
+.social-media ul{
+    text-align: center;
+    padding: 2px;
+}
+footer p{
+    color: #828282;
+    text-align: center;
+    font-size: 16px;
+    display: inline;
+    padding-left: 43.7%
+}

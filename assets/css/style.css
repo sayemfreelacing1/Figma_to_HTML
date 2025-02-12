@@ -1,0 +1,370 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* Global CSS */
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #f9faff;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+h4, h5, h6{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title-border{
+    background: #FDC435;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 auto 80px;;
+}
+.no-padding{
+    padding: 0;
+}
+.mb-75{
+    margin-bottom: 75px;
+}
+ul{
+    padding: none;
+}
+/* Header CSS */
+
+.navbar .navbar-brand{
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    
+}
+.navbar .nav-link{
+    position: relative;
+    color: #25282B;
+    font-size: 18px;
+    margin: 0 18px;
+    overflow: hidden;
+}
+/*.navbar .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 73%;
+    height: 2px;
+    left: 13%;
+    bottom: 0;
+    background: #25282B;
+}*/
+.navbar .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 73%;
+    height: 2px;
+    left: -100%;
+    bottom: 0;
+    background: #25282B;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link:hover::after{
+    left: 13%;
+}
+
+
+/*Hero Section CSS*/
+
+.intro-section h4{
+    color: #FDC435;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 5px;
+/*    font-family: 'Nunito', sans-serif;*/
+}
+.intro-section h1{
+    color: #333333;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+    font-style: normal;
+    margin-bottom: 16px;
+}
+.intro-section p{
+    font-family: 'Nunito', sans-serif;
+    color: #828282;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 30px;
+}
+.intro-section{
+   padding: 34px 97px 0 0;
+}
+.intro-section ul{
+    padding: 0;
+}
+.intro-section li{
+    list-style: none;
+    margin-right: 20px;
+    display: inline;
+}
+
+.intro-section .btn-project{
+    background: #FDC435;
+    color: #25282B;
+    border: 1px solid #FDC435;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+.intro-section .btn-project:hover{
+    background: #fff;
+    border: 2px solid #25282B;
+}
+.intro-section .btn-linkedin{
+    border: 2px solid #25282B;
+    border-radius: 8px;
+    color: #25282B;
+    padding: 8px 25px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+.intro-section .btn-linkedin:hover{
+    background: #FDC435;
+    border: none;
+}
+
+header{
+    position: relative;
+}
+header .intro-image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 620px;
+    z-index: -1;
+}
+
+/*project section CSS*/
+.project-section{
+    padding: 100px 0 4px;
+}
+
+.project-section h2{
+    margin-top: 150px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #25282B;
+}
+.project-section h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 90px;
+    color: #25282B;
+
+}
+.project-section p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #828282;
+}
+.project-section .btn-project{
+    width: 170px;
+    height: 43px;
+    padding: 8px 24px;
+    border: 1px solid #25282B;
+    border-radius: 24px;
+    background: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    color: #25282B;
+    letter-spacing: 0.5px;
+}
+.background-left{
+    padding: 132px 64px;
+    background: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.project-section .right-image{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;   
+}
+.project-section .left-image{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;   
+}
+.background-right{
+    padding: 132px 64px;
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 0px;
+}
+
+/*Footer CSS*/
+footer{
+    padding: 25px 0;
+}
+.social-media ul li{
+    list-style: none;
+    display: inline;
+
+} 
+.social-media ul li a .fa-brands,
+.social-media ul li a .fa-solid{
+    text-align: center;
+    background: #fff;
+    width: 48px;
+    border-radius: 5px;
+    color: #25282B;
+    line-height: 48px;
+    font-size: 38px;
+}
+.social-media ul{
+    text-align: center;
+    padding: 2px;
+}
+footer p{
+    color: #828282;
+    text-align: center;
+    font-size: 16px;
+}
+/*
+.mobile-item{
+    display: none;
+}*/
+
+@media (min-width: 320px) and (max-width: 576px){
+    
+    .intro-section {
+        padding: 42px 0px 0 0;
+    }
+    .intro-section h4 {
+        font-size: 20px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+    header .intro-image {
+        position: relative;
+        right: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .intro-section h1 {
+        font-size: 26px;
+        line-height: 37px;
+        margin-bottom: 12px;
+    }
+    .intro-section p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 26px;
+        margin-bottom: 28px;
+    }
+    .intro-section .btn-flex {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2px 22px;
+    }
+    .intro-section .btn-project {
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        
+    }
+    .intro-section .btn-linkedin {
+        border-radius: 8px;
+        padding: 8px 16px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        
+    }
+    /*.intro-section .btn-project {
+        background: #FDC435;
+        color: #25282B;
+        border: 1px solid #FDC435;
+        padding: 10px 24px;
+        font-size: 17px;
+        display: inline;
+        width: 100px;
+        margin-left: 24px;
+    }
+    .intro-section .btn-linkedin {
+        border: 2px solid #25282B;
+        border-radius: 8px;
+        color: #25282B;
+        padding: 9px 17px;
+        font-size: 17px;
+        display: inline;
+        width: 100px;
+        margin-left: 2px;
+    }*/
+    .project-section {
+        padding: 11px 0 4px;
+    }
+    .project-section h2 {
+        margin-top: 28px;
+        font-size: 30px;
+        line-height: 59px;
+    }
+    .title-border {
+        background: #FDC435;
+        width: 85px;
+        margin: 0 auto 27px
+    }
+    .background-left {
+    padding: 0px 7px;
+    margin-top: 15px;
+    }
+    .project-section h3 {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .project-section .btn-project {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-bottom: 29px;
+    }
+    .project-section .right-image, .project-section .left-image {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    }
+    .background-right {
+    padding: 0px 7px;
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    /*.dextop-item{
+        display: none;
+        
+    }*/
+    /*.mobile-item{
+        display: initial;
+        padding: 0;
+       
+    }*/
+    .mb-75 {
+    margin-bottom: 30px;
+    }
+    /*.mobile-item .img-fluid{
+        margin-bottom: 20px;
+      
+    } */  
+     
+}
+
+
